@@ -17,3 +17,11 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+new_content = 'An old silent pond...\nA frog jumps into the pond,\nsplash! Silence again.'
+with open('bar.txt', 'w') as f:
+    f.write(new_content)
+
+with open('bar.txt', 'r') as f:
+    lines = f.read()
+print(lines)
